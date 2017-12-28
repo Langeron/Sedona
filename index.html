@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Sedona</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<header class="main_header">
+			<nav class="main_navigation">
+				<a class="header_logo">
+					<img src="img/main_logo.png" alt="Sedona" width="138" height="70">
+				</a>
+				<ul class="site_navigation">
+					<li class="navigation_item"><a href="#">Информация</a></li>
+					<li class="navigation_item"><a href="#">Фото и видео</a></li>
+					<li class="navigation_item"><a href="#">Карта штата</a></li>
+					<li class="navigation_item"><a href="catalog.html">Гостиницы</a></li>
+				</ul>
+			</nav>
+			<div class="header_intro">
+				<img src="img/sedona_title.png" alt="Sedona" width="458" height="352">
+			</div>
+		</header>
+		<main>
+			<div class="top_text">
+				<p class="slogan">
+					Седона — небольшой городок в Аризоне, 
+				заслуживающий большего!</p>
+				<p class="slogan_description">
+					Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+				</p>
+			</div>
+			<section class="features">
+				<h2 class="visually_hidden">Наши особенности</h2>
+				<ul class="features_list">
+					<li class="feature_item">
+						<div class="feature_item_text">
+							<h3>Настощий городок</h3>
+							<span>— №1 —</span>
+							<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+						</div>
+						<div class="feature_item_img">
+							<img src="img/city.jpg" alt="Настощий городок" width="800" height="256">
+						</div>
+					</li>
+					<li class="feature_item">
+						<ul class="more_features">
+							<li class="more_feature_item">
+								<h4>Жилье</h4>
+								<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+							</li>
+							<li class="more_feature_item">
+								<h4>Еда</h4>
+								<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+							</li>
+							<li class="more_feature_item">
+								<h4>Сувениры</h4>
+								<p>Не только китайского, но и местного производства!</p>
+							</li>
+						</ul>
+					</li>
+					<li class="feature_item">
+						<div class="feature_item_text">
+							<h3>Там есть<br> Мост дьявола</h3>
+							<span>— №2 —</span>
+							<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+						</div>
+						<div class="feature_item_img">
+							<img src="img/mount.jpg" alt="Мост дьявола" width="800" height="256">
+						</div>
+					</li>
+				</ul>
+				<ul class="features_plus_list">
+					<li class="feature_item_plus">
+						<h3>Небольшая площадь</h3>
+						<span>— №3 —</span>
+						<p>Все достопримечательности находятся очень близко</p>
+					</li>
+					<li class="feature_item_plus">
+						<h3>Красивая дорога</h3>
+						<span>— №4 —</span>
+						<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+					</li>
+					<li class="feature_item_plus">
+						<h3>Мало туристов</h3>
+						<span>— №5 —</span>
+						<p>Большинство едет в гранд каньон и толпится там</p>
+					</li>
+				</ul>
+				
+			</section>			
+			<section class="hotel_search">
+				<h2 class="visually_hidden">Поиск отеля</h2>
+				<div class="hotel_search_text">
+					<span>Заинтересовались?</span>
+					<p>Укажите предполагаемые даты поездки, <br>
+					и мы покажем вам лучшие предложения гостиниц в седоне</p>
+					<button class="btn hotel_search_btn" type="button">Поиск гостиницы в Седоне</button>
+				</div>
+				<div class="modal_search">
+					<form action="https://echo.htmlacademy.ru/" method="get">
+						<p class="search_date_to">
+							<label for="to">Дата заезда:</label>
+							<input class="search_date" type="text" name="to" id="to" placeholder="24 апреля 2017">
+							<button class="search_calendar_btn" type="button"><span class="visually_hidden">Выбрать дату</span></button>
+						</p>
+						<p class="search_date_out">
+							<label for="out">Дата заезда:</label>
+							<input class="search_date" type="text" name="out" id="out" placeholder="4 июля 2017">
+							<button class="search_calendar_btn" type="button"><span class="visually_hidden">Выбрать дату</span></button>
+						</p>
+						<p class="search_adult">
+							<label for="adult">Взрослые:</label>
+							<button class="search_minus_btn" type="button">-</button>
+							<input type="text" id="adult" name="adult" placeholder="2">
+							<button class="search_plus_btn" type="button">+</button>
+						</p>
+						<p class="search_child">
+							<label for="child">Дети</label>
+							<button class="search_minus_btn" type="button">-</button>
+							<input type="text" id="child" name="child" placeholder="0">
+							<button class="search_plus_btn" type="button">+</button>
+						</p>
+						<button class="btn search_btn" type="submit">Найти</button>
+					</form>
+				</div>
+			</section>	
+		</main>
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1166066.6017284926!2d-111.77959159720328!3d35.014643287945916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1514405521039" width="100%" height="472" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+		<footer class="main_footer">
+			<div class="footer_wrapp">
+				<p class="hashtag">#visitsedona</p>
+				<ul class="social_list">
+					<li class="social_item tw"><a href="#"><span class="visually_hidden">Twitter</span></a></li>
+					<li class="social_item fb"><a href="#"><span class="visually_hidden">Facebook</span></a></li>
+					<li class="social_item youtube"><a href="#"><span class="visually_hidden">YouTube</span></a></li>
+				</ul>
+				<div class="copyright">
+					<p>Website by</p>
+					<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="Html Academy" width="115" height="41"></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
